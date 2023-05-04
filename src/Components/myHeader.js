@@ -1,11 +1,10 @@
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Button from "react-bootstrap/Button";
+import MyButton from "./MyButton";
 import MyIcon from "./MyIcon";
 
-
-export default function MyHeader() {
+export default function MyHeader(props) {
   return (
     <>
       <Navbar expand="lg" variant="light" bg="light" fixed="top">
@@ -14,7 +13,14 @@ export default function MyHeader() {
             <img className="logo" src="/PedidosYa.png"></img>
           </Navbar.Brand>
           <Navbar.Brand className="barra">
-            <Button variant="outline-dark" className="btnNav"><MyIcon className="icon"/> Registrá tu negocio</Button>
+            
+            <MyButton
+              className="btnNav"
+              icon = <MyIcon/>
+              text= "Registrá tu negocio"
+              variant="outline-dark"
+              color="black"/>
+
             <img className="logoP" src="/LogoP.png"></img>
             <NavDropdown title="" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -30,7 +36,6 @@ export default function MyHeader() {
           </Navbar.Brand>
         </Container>
       </Navbar>
-      
     </>
   );
 } /*En principio lo creo como un componente funcional y no de clase. Revisar*/
