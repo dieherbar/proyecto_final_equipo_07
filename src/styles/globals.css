@@ -10,3 +10,32 @@ a {
 ul li {
     list-style-type: none;
 }
+
+.logo{
+    width: 200px;
+}
+
+.logoP{
+    background-color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.barra{
+    display: flex;
+}
+
+#basic-nav-dropdown{
+    margin-left: 10px;
+}
+
+.btnNav{
+    margin-right: 30px;
+    font-size: small;
+    font-weight: 600;
+    padding-left: 10px;
+    justify-content: space-around;
+}
+
