@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import MyHeader from "@/Components/myHeader";
 import PruebaDiego from "@/Components/pruebaDiego";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
