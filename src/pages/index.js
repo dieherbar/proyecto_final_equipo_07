@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import MyHeader from "@/Components/myHeader";
 import PruebaDiego from "@/Components/pruebaDiego";
+import ButtonTest from "@/Components/Buttons/ButtonTest";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,9 @@ export default function Home() {
        <PruebaDiego className={styles.banner} title="¡Pedí lo que quieras!" text="Restaurantes, mercados, farmacias, kioscos y mucho más.">
 
        </PruebaDiego>
+       <ButtonTest>
+        
+       </ButtonTest>
       </main>
     </>
   );

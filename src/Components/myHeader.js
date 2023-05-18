@@ -1,10 +1,14 @@
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import MyButton from "./MyButton";
+import MyButton from "./Buttons/MyButton";
 import MyIcon from "./MyIcon";
 
+
 export default function MyHeader(props) {
+  
+
+  
   return (
     <>
       <Navbar expand="lg" variant="light" bg="light" fixed="top">
@@ -19,7 +23,8 @@ export default function MyHeader(props) {
               icon = <MyIcon/>
               text= "Registrá tu negocio"
               variant="outline-dark"
-              color="black"/>
+              color="black" 
+              />
 
             <img className="logoP" src="/LogoP.png"></img>
             <NavDropdown title="" id="basic-nav-dropdown">
