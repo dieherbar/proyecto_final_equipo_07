@@ -29,9 +29,9 @@ export default function MyHeader(props) {
 
             <img className={styles.logoP} src="/LogoP.png"></img>
             <NavDropdown title="" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Ayuda en línea</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-               Iniciar sesión/ Registrarse
+              <NavDropdown.Item href="#action/3.1" style={{fontSize: "12px"}}> <i class="bi bi-headset" style={{marginRight: "5px"}}></i>Ayuda en línea</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2" style={{fontSize: "12px"}}>
+              <i class="bi bi-box-arrow-right" style={{marginRight: "5px"}}></i> Iniciar sesión/ Registrarse
               </NavDropdown.Item>
             </NavDropdown>
           </Navbar.Brand>
