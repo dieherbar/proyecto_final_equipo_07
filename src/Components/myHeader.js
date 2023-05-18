@@ -29,9 +29,9 @@ export default function MyHeader(props) {
 
             <img className={styles.logoP} src="/LogoP.png"></img>
             <NavDropdown title="" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1" style={{fontSize: "12px"}}> <i class="bi bi-headset" style={{marginRight: "5px"}}></i>Ayuda en línea</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1" style={{fontSize: "12px"}}> <i className="bi bi-headset" style={{marginRight: "5px"}}></i>Ayuda en línea</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" style={{fontSize: "12px"}}>
-              <i class="bi bi-box-arrow-right" style={{marginRight: "5px"}}></i> Iniciar sesión/ Registrarse
+              <i className="bi bi-box-arrow-right" style={{marginRight: "5px"}}></i> Iniciar sesión/ Registrarse
               </NavDropdown.Item>
             </NavDropdown>
           </Navbar.Brand>
@@ -58,8 +58,8 @@ export default function MyHeader(props) {
                   Qué bonito tenerte aquí
                 </Offcanvas.Title>
                   <Nav.Link href="#action2"> <i className="bi bi-house-door-fill" style={{marginRight: "20px"}}></i> Inicio</Nav.Link>
-                  <Nav.Link href="#action3"><i class="bi bi-headset" style={{marginRight: "20px"}}></i> Ayuda en línea</Nav.Link>
-                  <Nav.Link href="#action4" className={styles.registro}> <i class="bi bi-box-arrow-right" style={{marginRight: "20px"}}></i> Registrarse/ Iniciar sesión</Nav.Link>
+                  <Nav.Link href="#action3"><i className="bi bi-headset" style={{marginRight: "20px"}}></i> Ayuda en línea</Nav.Link>
+                  <Nav.Link href="#action4" className={styles.registro}> <i className="bi bi-box-arrow-right" style={{marginRight: "20px"}}></i> Registrarse/ Iniciar sesión</Nav.Link>
                 </Nav>
                 
                 
