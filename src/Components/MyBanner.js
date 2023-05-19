@@ -1,15 +1,19 @@
 import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
-import styles from "@/styles/Home.module.css";
+import BannerText from "./BannerText"
+import styles from "@/styles/Banner.module.css";
 
-export default function PruebaDiego(props) {
+export default function MyBanner(props) {
     return (
         <>
             {/* <h1>{props.title}</h1>
         <span>{props.text}</span> */}
-            <Card>
-                <Card.Img src='/home-background-ar.png' />
+            
+            <BannerText />
+            <Card className={styles.inicio} >
+               
+                <Card.Img src='/home-background-ar.png' className={styles.BackImg}/>
                 <Card.ImgOverlay>
                     <Container >
                         <Row>
