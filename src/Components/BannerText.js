@@ -10,6 +10,7 @@ export default function BannerText() {
         <p className={styles.parrafo}>
           Más de 10.000 restaurantes con delivery en Argentina
         </p>
+        <label>Veamos qué tenés cerca</label>
         <MyInput />
       </div>
     </>

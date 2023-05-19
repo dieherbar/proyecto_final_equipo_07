@@ -1,45 +1,41 @@
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "react-bootstrap";
-import Form from 'react-bootstrap/Form';
-import BannerText from "./BannerText"
+import Form from "react-bootstrap/Form";
+import BannerText from "./BannerText";
 import styles from "@/styles/Banner.module.css";
+import MyInput from "./MyInput";
 
 export default function MyBanner(props) {
-    return (
-        <>
-            {/* <h1>{props.title}</h1>
+  return (
+    <>
+      {/* <h1>{props.title}</h1>
         <span>{props.text}</span> */}
-            
-            <BannerText />
-            <Card className={styles.inicio} >
-               
-                <Card.Img src='/home-background-ar.png' className={styles.BackImg}/>
-                <Card.ImgOverlay>
-                    <Container >
-                        <Row>
-                            <Col>
-                                <div className={styles.banner}>
-                                    <Card.Title className='text-center text-light fs-1 '>{props.title}</Card.Title>
-                                    <Card.Text className='text-center text-light fs-5 '>
-                                        {props.text}
-                                    </Card.Text>
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col className='col-9'>
-                                <Form.Label className='text-center text-light fs-5 fw-bold' htmlFor="localizacion">Veamos que tenes cerca</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    id="localizacion"
-                                    aria-describedby="direccion-pedido"
-                                />
-                            </Col>
-                        </Row>
-                    </Container>
-                </Card.ImgOverlay>
-            </Card>
 
-        </>
-    );
+      <BannerText />
+      <Card className={styles.inicio}>
+        <Card.Img src="/home-background-ar.png" className={styles.BackImg} />
+        <Card.ImgOverlay className={styles.BackImg}>
+          <Container className={styles.cont}>
+            <Row>
+              <Col>
+                <div className={styles.banner}>
+                  <Card.Title className="text-center text-light fs-1">
+                    {props.title}
+                  </Card.Title>
+                  <Card.Text className="text-center text-light fs-5 ">
+                    {props.text}
+                  </Card.Text>
+                </div>
+              </Col>
+            </Row>
+            <Row className={styles.inputB}>
+              <Col className="col-9">
+                <MyInput />
+              </Col>
+            </Row>
+          </Container>
+        </Card.ImgOverlay>
+      </Card>
+    </>
+  );
 }

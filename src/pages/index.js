@@ -23,7 +23,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
        <MyHeader />
        <MyBanner className={styles.banner} title="¡Pedí lo que quieras!" text="Restaurantes, mercados, farmacias, kioscos y mucho más.">
-
+      
         </MyBanner>
         
         <ComerciosAdheridos />
