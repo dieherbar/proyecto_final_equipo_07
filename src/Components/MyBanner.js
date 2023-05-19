@@ -12,8 +12,9 @@ export default function MyBanner(props) {
         <span>{props.text}</span> */}
 
       <BannerText />
+      <div>
       <Card className={styles.inicio}>
-        <Card.Img src="/home-background-ar.png" className={styles.BackImg} />
+        <Card.Img src="/home-background-ar.png" className={styles.BackImg}  />
         <Card.ImgOverlay className={styles.BackImg}>
           <Container className={styles.cont}>
             <Row>
@@ -30,12 +31,16 @@ export default function MyBanner(props) {
             </Row>
             <Row className={styles.inputB}>
               <Col className="col-9">
-                <MyInput />
+                <MyInput
+                 type="text"
+                 className="form-control"
+                 placeholder=" Dirección o punto de referencia"/>
               </Col>
             </Row>
           </Container>
         </Card.ImgOverlay>
-      </Card>
+        </Card>
+        </div>
     </>
   );
 }

@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import MyHeader from "@/Components/myHeader";
 import PruebaDiego from "@/Components/MyBanner";
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap-icons/font/bootstrap-icons.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import ComerciosAdheridos from "@/Components/ComerciosAdheridos";
 import MyBanner from "@/Components/MyBanner";
 
@@ -21,11 +21,12 @@ export default function Home() {
         <link rel="icon" href="/LogoP.png" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-       <MyHeader />
-       <MyBanner className={styles.banner} title="¡Pedí lo que quieras!" text="Restaurantes, mercados, farmacias, kioscos y mucho más.">
-      
-        </MyBanner>
-        
+        <MyHeader />
+        <MyBanner
+          className={styles.banner}
+          title="¡Pedí lo que quieras!"
+          text="Restaurantes, mercados, farmacias, kioscos y mucho más."
+        ></MyBanner>
         <ComerciosAdheridos />
       </main>
     </>

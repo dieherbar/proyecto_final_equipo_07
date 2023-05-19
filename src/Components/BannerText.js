@@ -1,5 +1,7 @@
 import styles from "@/styles/Banner.module.css";
 import MyInput from "./MyInput";
+import { BiGeo } from 'react-icons/bi';
+
 
 export default function BannerText() {
   return (
@@ -11,7 +13,11 @@ export default function BannerText() {
           Más de 10.000 restaurantes con delivery en Argentina
         </p>
         <label>Veamos qué tenés cerca</label>
-        <MyInput />
+        <MyInput
+          type="text"
+          className="form-control"
+          placeholder=" Dirección o punto de referencia"
+        />
       </div>
     </>
   );
