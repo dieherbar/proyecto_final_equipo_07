@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import MyHeader from "@/Components/myHeader";
-import PruebaDiego from "@/Components/MyBanner";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ComerciosAdheridos from "@/Components/ComerciosAdheridos";
