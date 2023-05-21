@@ -1,0 +1,85 @@
+.menu {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .logoP{
+     background-color: rgb(201, 34, 59);
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     padding: 5px;
+ }
+/* 
+ .logoP1{
+    background-color: rgb(201, 34, 59);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px; 
+ } */
+
+ .logo {
+     width: 200px;
+ }
+
+ .logoP1{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin-left: 35%;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgb(201, 34, 59);
+    border-radius: 50%;
+ }
+
+ .barra {
+     display: none;
+ }
+
+ .menu{
+    display: flex;
+ }
+
+.bar{
+    display: none;
+}
+
+.btnNav{
+    margin: 20px;
+}
+
+.LogoP img{
+padding-top: 30px;
+}
+
+.log{
+    margin-top: 26px ;
+}
+
+.NavDrop{
+    margin-top: 25px ;  
+}
+
+.title{
+    text-align: center;
+    font-size:x-large;
+}
+
+.registro{
+    margin-top: 75%;
+}
+
+ @media only screen and (min-width: 770px) {
+     .barra {
+         display: flex;
+         padding-right: 80px;
+     }
+
+
+    .bar{
+        display: flex;
+    }
+
+ }

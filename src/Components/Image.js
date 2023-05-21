@@ -5,5 +5,3 @@ function Imagen(props) {
   <Imagen src={props.src} fluid />
   );
 }
-
-export default Imagen;
