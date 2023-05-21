@@ -1,0 +1,55 @@
+.foo {
+    font-size: x-small;
+    background-color: rgb(219, 31, 88);
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    padding-right: 30px;
+
+}
+
+
+.listas {
+    display: flex;
+    padding-top: 30px;
+    justify-content: flex-start;
+
+}
+
+.listas ul li {
+    padding-top: 10px;
+}
+
+.parrafo {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.parrafoDos {
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 770px) {
+
+    .foo {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .listas {
+        justify-content: flex-start;
+        width: 100%;
+        margin-right: 10%;
+    }
+
+    .listas ul {
+        margin-right: 10%;
+    }
+
+    .parrafoTres {
+        margin-left: 3%;
+    }
+}
