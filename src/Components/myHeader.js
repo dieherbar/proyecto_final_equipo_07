@@ -52,7 +52,7 @@ export default function MyHeader(props) {
       </Navbar>
 
       {[false].map((expand) => (
-        <Navbar key={expand} bg="white" fixed="top" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="white"  expand={expand} className="mb-3">
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
