@@ -9,7 +9,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import ComerciosAdheridos from "@/Components/ComerciosAdheridos";
 import MyBanner from "@/Components/MyBanner";
 import Tops from "@/Components/Tops";
-// import MyFooter from "@/Components/MyFooter";
+import MyFooter from "@/Components/MyFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +31,7 @@ export default function Home() {
         ></MyBanner>
         <ComerciosAdheridos />
         <Tops />
+        <MyFooter />
       </main>
     </>
   );
